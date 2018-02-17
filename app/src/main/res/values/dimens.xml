@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <dimen name="spaceZero">0dp</dimen>
+    <dimen name="spaceSmall">8dp</dimen>
+    <dimen name="spaceMedium">16dp</dimen>
+    <dimen name="spaceLarge">24dp</dimen>
+    <dimen name="logoPortrait">90dp</dimen>
+    <dimen name="logoLandscape">120dp</dimen>
+    <dimen name="textHeader">18sp</dimen>
+    <dimen name="textMotto">16sp</dimen>
+    <dimen name="textInfo">14sp</dimen>
+</resources>

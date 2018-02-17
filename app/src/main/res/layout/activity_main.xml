@@ -4,11 +4,75 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.android.glukanerabc.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/team_name" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spaceZero"
+        android:layout_weight="1">
+
+        <ImageView
+            android:src="@drawable/team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="@dimen/logoPortrait"
+            android:layout_height="@dimen/logoPortrait"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/spaceMedium"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spaceZero"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textViewHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spaceSmall"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/textHeader"
+            android:text="@string/team_name" />
+
+        <TextView
+            android:id="@+id/textViewMotto"
+            android:layout_below="@id/textViewHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spaceSmall"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/textMotto"
+            android:text="@string/team_motto" />
+
+        <TextView
+            android:id="@+id/textViewInfo"
+            android:layout_below="@id/textViewMotto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/spaceSmall"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:textAlignment="textStart"
+            android:fontFamily="sans-serif"
+            android:textSize="@dimen/textInfo"
+            android:text="@string/team_motto" />
+
+    </RelativeLayout>
 
 </LinearLayout>
