@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.glukanerabc.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif"
+        android:padding="@dimen/spaceSmall"
+        android:text="@string/team_name"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textHeader" />
+
+    <TextView
+        android:id="@+id/textViewMotto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif"
+        android:padding="@dimen/spaceSmall"
+        android:text="@string/team_motto"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/textMotto" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/team_name"
+                android:scaleType="centerCrop"
+                android:src="@drawable/team" />
+
+            <ImageView
+                android:layout_width="@dimen/logoPortrait"
+                android:layout_height="@dimen/logoPortrait"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="@dimen/spaceMedium"
+                android:contentDescription="@string/team_motto"
+                android:src="@drawable/logo" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/spaceZero"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/colorAccent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spaceZero"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/spaceSmall"
+                android:drawableStart="@drawable/location"
+                android:onClick="showMap"
+                android:padding="@dimen/spaceLarge"
+                android:text="@string/team_address"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textInfo" />
+
+            <TextView
+                android:id="@+id/textViewTelephone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spaceZero"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/spaceSmall"
+                android:drawableStart="@drawable/telephone"
+                android:onClick="callTeam"
+                android:padding="@dimen/spaceLarge"
+                android:text="@string/team_telephone"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textInfo" />
+
+            <TextView
+                android:id="@+id/textViewWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spaceZero"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/spaceSmall"
+                android:drawableStart="@drawable/www"
+                android:onClick="viewWebpage"
+                android:padding="@dimen/spaceLarge"
+                android:text="@string/team_website"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textInfo" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spaceZero"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/spaceSmall"
+                android:drawableStart="@drawable/email"
+                android:onClick="composeEmail"
+                android:padding="@dimen/spaceLarge"
+                android:text="@string/team_email"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textInfo" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
