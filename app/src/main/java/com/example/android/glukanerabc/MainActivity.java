@@ -14,8 +14,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    //Intent for Address
     public void showMap(View view) {
-        Uri geolocation = Uri.parse("geo:47.6,-122.3?z=11");
+        Uri geolocation = Uri.parse("geo:37.9892,23.8458?z=13");
         Intent mapIntent = new Intent(Intent.ACTION_VIEW);
         mapIntent.setData(geolocation);
         if (mapIntent.resolveActivity(getPackageManager()) != null) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Intent for Telephone
     public void callTeam(View view) {
         Intent callIntent = new Intent(Intent.ACTION_DIAL);
         callIntent.setData(Uri.parse("tel:" + "2106659220"));
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Intent for Website
     public void viewWebpage(View view) {
         Uri webpage = Uri.parse("http://www.gsgn.gr");
         Intent websiteIntent = new Intent(Intent.ACTION_VIEW, webpage);
@@ -39,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Intent for Email
     public void composeEmail(View view) {
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
         emailIntent.setData(Uri.parse("mailto: gysy.gln@gmail.com"));
