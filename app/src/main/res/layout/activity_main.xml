@@ -17,15 +17,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
+            android:contentDescription="@string/team_name"
             />
 
         <ImageView
             android:src="@drawable/logo"
             android:layout_width="@dimen/logoPortrait"
             android:layout_height="@dimen/logoPortrait"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_margin="@dimen/spaceMedium"
+            android:contentDescription="@string/team_motto"
             />
 
     </RelativeLayout>
@@ -71,7 +73,7 @@
 
             <TextView
                 android:id="@+id/textViewAddress"
-                android:drawableLeft="@drawable/location"
+                android:drawableStart="@drawable/location"
                 android:drawablePadding="@dimen/spaceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/spaceZero"
@@ -79,11 +81,12 @@
                 android:padding="@dimen/spaceMedium"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/textInfo"
-                android:text="@string/team_address"/>
+                android:text="@string/team_address"
+                android:onClick="showMap"/>
 
             <TextView
                 android:id="@+id/textViewTelephone"
-                android:drawableLeft="@drawable/telephone"
+                android:drawableStart="@drawable/telephone"
                 android:drawablePadding="@dimen/spaceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/spaceZero"
@@ -91,11 +94,12 @@
                 android:padding="@dimen/spaceMedium"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/textInfo"
-                android:text="@string/team_telephone"/>
+                android:text="@string/team_telephone"
+                android:onClick="callTeam"/>
 
             <TextView
                 android:id="@+id/textViewWebsite"
-                android:drawableLeft="@drawable/www"
+                android:drawableStart="@drawable/www"
                 android:drawablePadding="@dimen/spaceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/spaceZero"
@@ -103,11 +107,12 @@
                 android:padding="@dimen/spaceMedium"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/textInfo"
-                android:text="@string/team_website"/>
+                android:text="@string/team_website"
+                android:onClick="viewWebpage"/>
 
             <TextView
                 android:id="@+id/textViewEmail"
-                android:drawableLeft="@drawable/email"
+                android:drawableStart="@drawable/email"
                 android:drawablePadding="@dimen/spaceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/spaceZero"
@@ -115,7 +120,8 @@
                 android:padding="@dimen/spaceMedium"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/textInfo"
-                android:text="@string/team_email"/>
+                android:text="@string/team_email"
+                android:onClick="composeEmail"/>
 
         </LinearLayout>
 
