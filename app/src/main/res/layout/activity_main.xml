@@ -60,18 +60,64 @@
             android:textSize="@dimen/textMotto"
             android:text="@string/team_motto" />
 
-        <TextView
-            android:id="@+id/textViewInfo"
+        <LinearLayout
             android:layout_below="@id/textViewMotto"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="@dimen/spaceSmall"
-            android:textColor="@color/colorWhite"
             android:background="@color/colorAccent"
             android:textAlignment="textStart"
             android:fontFamily="sans-serif"
-            android:textSize="@dimen/textInfo"
-            android:text="@string/team_motto" />
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewAddress"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="@dimen/spaceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spaceZero"
+                android:layout_weight="1"
+                android:padding="@dimen/spaceMedium"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textInfo"
+                android:text="@string/team_address"/>
+
+            <TextView
+                android:id="@+id/textViewTelephone"
+                android:drawableLeft="@drawable/telephone"
+                android:drawablePadding="@dimen/spaceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spaceZero"
+                android:layout_weight="1"
+                android:padding="@dimen/spaceMedium"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textInfo"
+                android:text="@string/team_telephone"/>
+
+            <TextView
+                android:id="@+id/textViewWebsite"
+                android:drawableLeft="@drawable/www"
+                android:drawablePadding="@dimen/spaceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spaceZero"
+                android:layout_weight="1"
+                android:padding="@dimen/spaceMedium"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textInfo"
+                android:text="@string/team_website"/>
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="@dimen/spaceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spaceZero"
+                android:layout_weight="1"
+                android:padding="@dimen/spaceMedium"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textInfo"
+                android:text="@string/team_email"/>
+
+        </LinearLayout>
 
     </RelativeLayout>
 

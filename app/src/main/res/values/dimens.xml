@@ -8,5 +8,5 @@
     <dimen name="logoLandscape">120dp</dimen>
     <dimen name="textHeader">18sp</dimen>
     <dimen name="textMotto">16sp</dimen>
-    <dimen name="textInfo">14sp</dimen>
+    <dimen name="textInfo">13sp</dimen>
 </resources>
